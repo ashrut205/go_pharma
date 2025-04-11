@@ -114,68 +114,7 @@ function Products() {
   return (
     <section id="products" className="products-section py-5">
       <div className="container py-5">
-        <div className="row text-center mb-5">
-          <div className="col-lg-6 mx-auto">
-            <span className="badge bg-primary-subtle text-primary mb-2">Our Products</span>
-            <h2 className="section-title">Featured Health Products</h2>
-            <p className="section-description">Browse our selection of high-quality healthcare products</p>
-          </div>
-        </div>
 
-        <div className="product-categories mb-5">
-          <ul className="nav nav-pills justify-content-center">
-            {categories.map((category) => (
-              <li className="nav-item" key={category.id}>
-                <button
-                  className={`nav-link ${activeCategory === category.id ? "active" : ""}`}
-                  onClick={() => setActiveCategory(category.id)}
-                >
-                  {category.name}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="row g-4">
-          {filteredProducts.map((product) => (
-            <div className="col-md-6 col-lg-3" key={product.id}>
-              <div className="product-card h-100">
-                {product.discount && <div className="discount-badge">-{product.discount}%</div>}
-                <div className="product-image">
-                  <img src={product.image || "/placeholder.svg"} alt={product.name} className="img-fluid" />
-                </div>
-                <div className="product-details">
-                  <div className="product-category">{categories.find((c) => c.id === product.category).name}</div>
-                  <h3 className="product-title">{product.name}</h3>
-                  <div className="product-rating">
-                    {renderStars(product.rating)}
-                    <span className="rating-text ms-1">({product.rating})</span>
-                  </div>
-                  <div className="product-price">
-                    {product.discount ? (
-                      <>
-                        <span className="original-price">${product.price.toFixed(2)}</span>
-                        <span className="discounted-price">
-                          ${(product.price * (1 - product.discount / 100)).toFixed(2)}
-                        </span>
-                      </>
-                    ) : (
-                      <span className="current-price">${product.price.toFixed(2)}</span>
-                    )}
-                  </div>
-                  <button className="btn btn-primary w-100 mt-3">
-                    <FaShoppingCart className="me-2" /> Add to Cart
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="text-center mt-5">
-          <button className="btn btn-outline-primary btn-lg">View All Products</button>
-        </div>
       </div>
     </section>
   )

@@ -6,6 +6,7 @@ function Footer() {
     <footer className="footer-section">
       <div className="container py-5">
         <div className="row g-4">
+          {/* About Section */}
           <div className="col-lg-4">
             <div className="footer-about">
               <a className="footer-logo d-flex align-items-center mb-3" href="#home">
@@ -15,76 +16,59 @@ function Footer() {
                 </span>
               </a>
               <p className="mb-4">
-                MediCare Plus is your trusted pharmacy for all healthcare needs. We are committed to providing quality
-                products and exceptional service to our community.
+                MediCare Plus is a digital clinical support platform focused on enhancing medication safety,
+                documentation efficiency, and interdisciplinary collaboration across the continuum of care.
               </p>
               <div className="social-links">
-                <a href="#" className="social-link">
+                <a href="#" className="social-link" aria-label="Facebook">
                   <FaFacebookF />
                 </a>
-                <a href="#" className="social-link">
+                <a href="#" className="social-link" aria-label="Twitter">
                   <FaTwitter />
                 </a>
-                <a href="#" className="social-link">
+                <a href="#" className="social-link" aria-label="Instagram">
                   <FaInstagram />
                 </a>
-                <a href="#" className="social-link">
+                <a href="#" className="social-link" aria-label="LinkedIn">
                   <FaLinkedinIn />
                 </a>
               </div>
             </div>
           </div>
 
+          {/* Quick Links */}
           <div className="col-lg-2 col-md-6">
             <div className="footer-links">
               <h4 className="footer-title">Quick Links</h4>
               <ul className="list-unstyled">
-                <li>
-                  <a href="#home">Home</a>
-                </li>
-                <li>
-                  <a href="#about">About Us</a>
-                </li>
-                <li>
-                  <a href="#services">Services</a>
-                </li>
-                <li>
-                  <a href="#products">Products</a>
-                </li>
-                <li>
-                  <a href="#contact">Contact Us</a>
-                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Features</a></li>
+                <li><a href="#solution">Solutions</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
 
+          {/* Platform Services */}
           <div className="col-lg-2 col-md-6">
             <div className="footer-links">
-              <h4 className="footer-title">Our Services</h4>
+              <h4 className="footer-title">Platform Tools</h4>
               <ul className="list-unstyled">
-                <li>
-                  <a href="#">Prescription Refills</a>
-                </li>
-                <li>
-                  <a href="#">Medication Review</a>
-                </li>
-                <li>
-                  <a href="#">Home Delivery</a>
-                </li>
-                <li>
-                  <a href="#">Health Screenings</a>
-                </li>
-                <li>
-                  <a href="#">Vaccination</a>
-                </li>
+                <li><a href="#">Medication Reviews</a></li>
+                <li><a href="#">Clinical Documentation</a></li>
+                <li><a href="#">EHR Integration</a></li>
+                <li><a href="#">Decision Support</a></li>
+                <li><a href="#">Provider Collaboration</a></li>
               </ul>
             </div>
           </div>
 
+          {/* Contact or Support Newsletter */}
           <div className="col-lg-4">
             <div className="footer-newsletter">
-              <h4 className="footer-title">Newsletter</h4>
-              <p>Subscribe to our newsletter to receive updates on new products, special offers, and health tips.</p>
+              <h4 className="footer-title">Stay Connected</h4>
+              <p>Sign up to receive updates on system enhancements, feature releases, and healthcare insights.</p>
               <form className="mt-3">
                 <div className="input-group">
                   <input type="email" className="form-control" placeholder="Your Email Address" />
@@ -98,6 +82,7 @@ function Footer() {
         </div>
       </div>
 
+      {/* Footer Bottom */}
       <div className="footer-bottom">
         <div className="container">
           <div className="row">
@@ -106,7 +91,7 @@ function Footer() {
             </div>
             <div className="col-md-6 text-md-end">
               <p>
-                Made with <FaHeart className="text-danger mx-1" /> by MediCare Plus Team
+                Built with <FaHeart className="text-danger mx-1" /> by the MediCare Plus Team
               </p>
             </div>
           </div>

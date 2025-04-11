@@ -44,8 +44,8 @@ function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#products">
-                Products
+              <a className="nav-link" href="#solution">
+                Solutions
               </a>
             </li>
             <li className="nav-item">
@@ -64,10 +64,6 @@ function Header() {
               </a>
             </li>
           </ul>
-          <div className="d-flex ms-lg-3">
-            <button className="btn btn-outline-primary me-2">Login</button>
-            <button className="btn btn-primary">Sign Up</button>
-          </div>
         </div>
       </div>
     </nav>

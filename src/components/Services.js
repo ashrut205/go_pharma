@@ -1,36 +1,36 @@
-import { FaPills, FaClipboardCheck, FaTruck, FaHeadset, FaHospital, FaUserMd } from "react-icons/fa"
+import { FaClipboardCheck, FaUserMd, FaNotesMedical, FaRegChartBar, FaLaptopMedical, FaFileMedical } from "react-icons/fa"
 
 function Services() {
   const services = [
     {
-      icon: <FaPills className="service-icon" />,
-      title: "Prescription Refills",
-      description: "Quick and easy prescription refills with reminders when it's time to renew.",
-    },
-    {
       icon: <FaClipboardCheck className="service-icon" />,
-      title: "Medication Review",
-      description: "Comprehensive review of your medications to ensure they work well together.",
+      title: "Medication Reviews",
+      description: "Conduct structured medication reviews to ensure safety, efficacy, and compliance.",
     },
     {
-      icon: <FaTruck className="service-icon" />,
-      title: "Free Home Delivery",
-      description: "Get your medications delivered to your doorstep at no extra cost.",
+      icon: <FaNotesMedical className="service-icon" />,
+      title: "Clinical Documentation",
+      description: "Streamlined and standardized clinical documentation across care teams.",
     },
     {
-      icon: <FaHeadset className="service-icon" />,
-      title: "24/7 Support",
-      description: "Our pharmacists are available around the clock to answer your questions.",
+      icon: <FaLaptopMedical className="service-icon" />,
+      title: "Electronic Health Integration",
+      description: "Seamless access to patient health records and integration with EHR systems.",
     },
     {
-      icon: <FaHospital className="service-icon" />,
-      title: "Health Screenings",
-      description: "Regular health screenings to monitor your blood pressure, glucose, and more.",
+      icon: <FaRegChartBar className="service-icon" />,
+      title: "Data-Driven Insights",
+      description: "Monitor trends, outcomes, and adherence with real-time clinical analytics.",
+    },
+    {
+      icon: <FaFileMedical className="service-icon" />,
+      title: "CMR Management",
+      description: "Comprehensive tools for managing Clinical Medication Reviews with audit trails.",
     },
     {
       icon: <FaUserMd className="service-icon" />,
-      title: "Vaccination Services",
-      description: "Stay protected with our convenient vaccination services for the whole family.",
+      title: "Interdisciplinary Collaboration",
+      description: "Facilitate care coordination among physicians, pharmacists, and other providers.",
     },
   ]
 
@@ -38,11 +38,11 @@ function Services() {
     <section id="services" className="services-section py-5">
       <div className="container py-5">
         <div className="row text-center mb-5">
-          <div className="col-lg-6 mx-auto">
-            <span className="badge bg-primary-subtle text-primary mb-2">Our Services</span>
-            <h2 className="section-title">Comprehensive Healthcare Services</h2>
+          <div className="col-lg-8 mx-auto">
+            <span className="badge bg-primary-subtle text-primary mb-2">Platform Features</span>
+            <h2 className="section-title">Clinical Tools for Modern Healthcare</h2>
             <p className="section-description">
-              We offer a wide range of pharmacy services to meet all your healthcare needs
+              Our system empowers healthcare professionals with tools to improve medication safety, streamline documentation, and enhance care coordination.
             </p>
           </div>
         </div>
@@ -50,11 +50,12 @@ function Services() {
         <div className="row g-4">
           {services.map((service, index) => (
             <div className="col-md-6 col-lg-4" key={index}>
-              <div className="service-card h-100">
-                <div className="icon-box">{service.icon}</div>
+              <div className="service-card h-100 text-center p-4 border rounded shadow-sm">
+                <div className="icon-box mb-3">{service.icon}</div>
                 <h3 className="service-title">{service.title}</h3>
                 <p className="service-description">{service.description}</p>
-                <a href="#" className="service-link">
+                {/* Replace href with real routing if needed */}
+                <a href="#" className="service-link text-primary fw-medium">
                   Learn More <i className="bi bi-arrow-right"></i>
                 </a>
               </div>

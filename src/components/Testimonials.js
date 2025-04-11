@@ -4,42 +4,42 @@ function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "Regular Customer",
+      name: "Dr. Sarah Johnson",
+      role: "Primary Care Physician",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder-ob7miW3mUreePYfXdVwkpFWHthzoR5.svg?height=100&width=100",
       quote:
-        "MediCare Plus has been my go-to pharmacy for years. Their staff is knowledgeable and always takes the time to answer my questions. The home delivery service is a lifesaver!",
+        "The CMR system has streamlined our patient medication reviews and improved our documentation process significantly. It's intuitive and fits well into our workflow.",
       rating: 5,
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "Chronic Care Patient",
+      name: "Michael Chen, RN",
+      role: "Chronic Care Nurse",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder-ob7miW3mUreePYfXdVwkpFWHthzoR5.svg?height=100&width=100",
       quote:
-        "As someone who needs regular medications, I appreciate the medication management program they offer. The pharmacists really understand my needs and provide excellent care.",
+        "Managing long-term treatment plans is easier now. I can easily track changes in patient medication history and ensure accurate follow-ups.",
       rating: 5,
     },
     {
       id: 3,
       name: "Emily Rodriguez",
-      role: "New Customer",
+      role: "Clinical Pharmacist",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder-ob7miW3mUreePYfXdVwkpFWHthzoR5.svg?height=100&width=100",
       quote:
-        "I recently switched to MediCare Plus and I'm impressed with their service. The online ordering system is easy to use and their prices are very competitive.",
+        "The integration of clinical decision support tools within this system helps ensure safe prescribing. It’s become an essential part of our review process.",
       rating: 4,
     },
     {
       id: 4,
       name: "David Thompson",
-      role: "Senior Customer",
+      role: "Geriatric Care Specialist",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder-ob7miW3mUreePYfXdVwkpFWHthzoR5.svg?height=100&width=100",
       quote:
-        "The staff at MediCare Plus always treats me with respect and patience. They've helped me understand my medications better and their delivery service is prompt.",
+        "This system has enhanced medication reconciliation and improved collaboration across our care team. It’s a valuable tool in geriatric patient care.",
       rating: 5,
     },
   ]
@@ -49,10 +49,10 @@ function Testimonials() {
       <div className="container py-5">
         <div className="row text-center mb-5">
           <div className="col-lg-6 mx-auto">
-            <span className="badge bg-primary-subtle text-primary mb-2">Testimonials</span>
-            <h2 className="section-title">What Our Customers Say</h2>
+            <span className="badge bg-primary-subtle text-primary mb-2">Clinical Feedback</span>
+            <h2 className="section-title">Professional Insights</h2>
             <p className="section-description">
-              Hear from our satisfied customers about their experiences with MediCare Plus
+              Hear from healthcare professionals using our clinical management system in real-world settings.
             </p>
           </div>
         </div>
@@ -75,7 +75,7 @@ function Testimonials() {
                       </div>
                       <div className="testimonial-author">
                         <img
-                          src={testimonial.image || "/placeholder.svg"}
+                          src={testimonial.image}
                           alt={testimonial.name}
                           className="author-image rounded-circle"
                         />
