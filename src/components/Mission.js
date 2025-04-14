@@ -21,7 +21,7 @@ function Mission() {
       <div className="container py-5">
         <div className="row text-center mb-5">
           <div className="col-lg-8 mx-auto">
-            <span className="badge bg-success-subtle text-success mb-2">Our Mission</span>
+            <span className="badge bg-primary-subtle text-primary mb-2">Our Mission</span>
             <h2 className="section-title">Driving Innovation with Purpose</h2>
             <p className="text-muted">
               We’re committed to shaping the future of pharmaceutical operations through impactful technology.
