@@ -11,6 +11,8 @@ import Testimonials from "./components/Testimonials"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import Solution from "./components/Solution"
+import Mission from './components/Mission'
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <Services />
       <Products />
       <Solution/>
+      <Mission/>
       <About />
       <Testimonials />
       <Contact />
