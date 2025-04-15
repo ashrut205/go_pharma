@@ -1,3 +1,14 @@
+import React from 'react';
+import HeroLogo from "../assets/Distribution1.png"
+
+
+const scrollToConnect = () => {
+  const element = document.getElementById("contact");
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 function Hero() {
   return (
     <section id="home" className="hero-section">
@@ -12,8 +23,12 @@ function Hero() {
               safer, more effective, and collaborative pharmaceutical care.
             </p>
             <div className="d-flex gap-3">
-              <button className="btn btn-primary btn-lg">Request a Demo</button>
-              <button className="btn btn-outline-primary btn-lg">Learn How It Works</button>
+              <button
+                className="btn btn-primary btn-lg"
+                onClick={scrollToConnect}
+              >
+                Connect to us
+              </button>
             </div>
             <div className="hero-stats mt-5">
               <div className="row">
@@ -33,11 +48,13 @@ function Hero() {
             </div>
           </div>
           <div className="col-lg-6 hero-image">
-            <div className="image-container">
+            <div className="image-container p-3 border rounded shadow">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder-ob7miW3mUreePYfXdVwkpFWHthzoR5.svg?height=500&width=600"
+                src={HeroLogo}
+                height="500"
+                width="600"
                 alt="Clinical System Interface"
-                className="img-fluid"
+                className=""
               />
             </div>
           </div>
@@ -45,7 +62,7 @@ function Hero() {
       </div>
       <div className="hero-shape"></div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

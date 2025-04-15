@@ -29,8 +29,8 @@ function Solution() {
   ]
 
   return (
-    <section id="solution" className="solution-section py-5 bg-light">
-      <div className="container py-5">
+    <section id="solution" className="solution-section py-5 bg-grey">
+      <div className="container">
         <div className="row text-center mb-5">
           <div className="col-lg-8 mx-auto">
             <span className="badge bg-primary-subtle text-primary mb-2">Our Solution</span>

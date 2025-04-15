@@ -1,6 +1,33 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa"
+import emailjs from "@emailjs/browser"
+import { useRef } from "react";
 
 function Contact() {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!")
+        },
+        (error) => {
+          alert("An error occurred, please try again.")
+          console.log(error.text)
+        }
+      )
+
+    e.target.reset()
+  }
+
   return (
     <section id="contact" className="contact-section py-5">
       <div className="container py-5">
@@ -75,25 +102,43 @@ function Contact() {
           </div>
 
           <div className="col-lg-7">
-            <div className="contact-form-card">
+            <div className="contact-form-x">
               <h3 className="mb-4">Send Us a Message</h3>
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="row g-3">
                   <div className="col-md-6">
                     <div className="form-floating mb-3">
-                      <input type="text" className="form-control" id="nameInput" placeholder="Your Name" />
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="nameInput"
+                        placeholder="Your Name"
+                        name="user_name" // ✅ Add this
+                      />
                       <label htmlFor="nameInput">Your Name</label>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-floating mb-3">
-                      <input type="email" className="form-control" id="emailInput" placeholder="Your Email" />
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="emailInput"
+                        placeholder="Your Email"
+                        name="user_email" // ✅ Add this
+                      />
                       <label htmlFor="emailInput">Your Email</label>
                     </div>
                   </div>
                   <div className="col-12">
                     <div className="form-floating mb-3">
-                      <input type="text" className="form-control" id="subjectInput" placeholder="Subject" />
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="subjectInput"
+                        placeholder="Subject"
+                        name="subject" // ✅ Add this
+                      />
                       <label htmlFor="subjectInput">Subject</label>
                     </div>
                   </div>
@@ -103,6 +148,7 @@ function Contact() {
                         className="form-control"
                         id="messageInput"
                         placeholder="Your Message"
+                        name="message" // ✅ Add this
                         style={{ height: "150px" }}
                       ></textarea>
                       <label htmlFor="messageInput">Your Message</label>
@@ -115,6 +161,7 @@ function Contact() {
                   </div>
                 </div>
               </form>
+
             </div>
           </div>
         </div>

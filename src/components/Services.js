@@ -3,7 +3,7 @@ function Services() {
     {
       title: "EMR Systems",
       description:
-        "Secure, compliant Electronic Medical Record systems designed to streamline data management, enhance accuracy, and support seamless regulatory reporting.",
+      "Secure, compliant Electronic Medical Record systems designed to streamline data management, enhance accuracy, and support seamless regulatory reporting. These platforms enable real-time access to patient histories, medication records, and clinical notes—empowering healthcare professionals to make informed decisions.",
     },
     {
       title: "CRM Systems",
@@ -13,7 +13,7 @@ function Services() {
     {
       title: "Inventory Management Systems",
       description:
-        "Real-time inventory tracking and automation tools built to optimize stock levels, reduce losses, and maintain efficient supply chain operations.",
+        "Real-time inventory tracking and automation tools built to optimize stock levels, reduce losses, and maintain efficient supply chain operations. These systems provide comprehensive analytics, expiration alerts, and integration with procurement channels—ensuring accurate forecasting, regulatory compliance.",
     },
   ]
 
