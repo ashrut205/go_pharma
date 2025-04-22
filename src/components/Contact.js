@@ -66,7 +66,7 @@ function Contact() {
                   </div>
                   <div className="contact-text">
                     <h4>Email</h4>
-                    <p>info@medicareplus.com</p>
+                    <p>contact@gorack.in</p>
                   </div>
                 </div>
 
@@ -77,7 +77,7 @@ function Contact() {
                   <div className="contact-text">
                     <h4>Location</h4>
                     <p>
-                      123 Health Street, Medical District
+                      716 Shekhar central, Palasia Square
                       <br />
                       Indore, 452001
                     </p>
@@ -93,7 +93,7 @@ function Contact() {
                     <p>
                       Monday - Friday: 8:00 AM - 9:00 PM
                       <br />
-                      Saturday - Sunday: 9:00 AM - 7:00 PM
+                      Friday - Sunday: 9:00 AM - 7:00 PM
                     </p>
                   </div>
                 </div>

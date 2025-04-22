@@ -25,7 +25,7 @@ function Header() {
         <a className="navbar-brand d-flex align-items-center" href="#home">
           <img src={logo || "/placeholder.svg"} alt="MediCare Plus Logo" height="40" />
           <span className="ms-2 fw-bold text-primary">
-            MediCare<span className="text-success">Plus</span>
+          SRIGOPHARMA<span className="text-success">TECH</span>
           </span>
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

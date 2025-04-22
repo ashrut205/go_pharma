@@ -48,15 +48,13 @@ function Hero() {
             </div>
           </div>
           <div className="col-lg-6 hero-image">
-            <div className="image-container p-3 border rounded shadow">
-              <img
-                src={HeroLogo}
-                height="500"
-                width="600"
-                alt="Clinical System Interface"
-                className=""
-              />
-            </div>
+          <div className="image-container p-3 border rounded shadow" style={{ maxWidth: '600px', margin: '0 auto' }}>
+            <img
+              src={HeroLogo}
+              alt="Clinical System Interface"
+              className="img-fluid"
+            />
+          </div>
           </div>
         </div>
       </div>

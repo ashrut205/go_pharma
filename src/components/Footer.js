@@ -12,7 +12,7 @@ function Footer() {
               <a className="footer-logo d-flex align-items-center mb-3" href="#home">
                 <img src={logo || "/placeholder.svg"} alt="MediCare Plus Logo" height="40" />
                 <span className="ms-2 fw-bold text-white">
-                  MediCare<span className="text-success">Plus</span>
+                  SRIGOPHARMA<span className="text-success">TECH</span>
                 </span>
               </a>
               <p className="mb-4">
@@ -47,20 +47,6 @@ function Footer() {
                 <li><a href="#solution">Solutions</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#mission">Mission</a></li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Platform Services */}
-          <div className="col-lg-2 col-md-6">
-            <div className="footer-links">
-              <h4 className="footer-title">Platform Tools</h4>
-              <ul className="list-unstyled">
-                <li><a href="#">Medication Reviews</a></li>
-                <li><a href="#">Clinical Documentation</a></li>
-                <li><a href="#">EHR Integration</a></li>
-                <li><a href="#">Decision Support</a></li>
-                <li><a href="#">Provider Collaboration</a></li>
               </ul>
             </div>
           </div>
