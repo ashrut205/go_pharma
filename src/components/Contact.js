@@ -1,4 +1,4 @@
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa"
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaInstagram, FaLinkedin } from "react-icons/fa"
 import emailjs from "@emailjs/browser"
 import { useRef } from "react";
 
@@ -73,6 +73,31 @@ function Contact() {
                     </a>
                   </div>
                 </div>
+
+                <div className="contact-item">
+                  <div className="icon-box">
+                    <FaInstagram />
+                  </div>
+                  <div className="contact-text">
+                    <h4>Instagram</h4>
+                    <a href=" https://www.instagram.com/srigorack?igsh=ZjR0YjR3aGptMnIx" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }}>
+                      <p>SriGoRack</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="contact-item">
+                  <div className="icon-box">
+                    <FaLinkedin />
+                  </div>
+                  <div className="contact-text">
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/company/srigorack-technologies/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none' }}>
+                      <p>SriGoRack LinkedIn</p>
+                    </a>
+                  </div>
+                </div>
+
 
                 <div className="contact-item">
                   <div className="icon-box">
