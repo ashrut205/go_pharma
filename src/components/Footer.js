@@ -5,9 +5,9 @@ function Footer() {
   return (
     <footer className="footer-section">
       <div className="container py-5">
-        <div className="row g-4">
+        <div className="row g-12">
           {/* About Section */}
-          <div className="col-lg-4">
+          <div className="col-lg-8">
             <div className="footer-about">
               <a className="footer-logo d-flex align-items-center mb-3" href="#home">
                 <img src={logo || "/placeholder.svg"} alt="MediCare Plus Logo" height="40" />
@@ -37,7 +37,7 @@ function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="col-lg-2 col-md-6">
+          <div className="col-lg-4 col-md-3">
             <div className="footer-links">
               <h4 className="footer-title">Quick Links</h4>
               <ul className="list-unstyled">
@@ -50,22 +50,6 @@ function Footer() {
               </ul>
             </div>
           </div>
-
-          {/* Contact or Support Newsletter */}
-          <div className="col-lg-4">
-            <div className="footer-newsletter">
-              <h4 className="footer-title">Stay Connected</h4>
-              <p>Sign up to receive updates on system enhancements, feature releases, and healthcare insights.</p>
-              <form className="mt-3">
-                <div className="input-group">
-                  <input type="email" className="form-control" placeholder="Your Email Address" />
-                  <button className="btn btn-primary" type="submit">
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -74,11 +58,11 @@ function Footer() {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <p className="mb-md-0">&copy; {new Date().getFullYear()} MediCare Plus. All Rights Reserved.</p>
+              <p className="mb-md-0">&copy; {new Date().getFullYear()} SRIGOPHARMA TECH. All Rights Reserved.</p>
             </div>
             <div className="col-md-6 text-md-end">
               <p>
-                Built with <FaHeart className="text-danger mx-1" /> by the MediCare Plus Team
+                Built with <FaHeart className="text-danger mx-1" /> by the SRIGOPHARMA TECH Team
               </p>
             </div>
           </div>

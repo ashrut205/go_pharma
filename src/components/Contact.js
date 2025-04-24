@@ -56,7 +56,9 @@ function Contact() {
                   </div>
                   <div className="contact-text">
                     <h4>Phone</h4>
-                    <p>+91 99818 34205</p>
+                    <a href="tel:+919981834205" style={{ color: 'white', textDecoration: 'none' }}>
+                      <p>+91 99818 34205</p>
+                    </a>
                   </div>
                 </div>
 
@@ -66,7 +68,9 @@ function Contact() {
                   </div>
                   <div className="contact-text">
                     <h4>Email</h4>
-                    <p>contact@gorack.in</p>
+                    <a href="mailto:contact@gorack.in" style={{ color: 'white', textDecoration: 'none' }}>
+                      <p>contact@gorack.in</p>
+                    </a>
                   </div>
                 </div>
 

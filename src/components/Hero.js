@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroLogo from "../assets/Distribution1.png"
+import HeroLogo from "../assets/crm.png"
 
 
 const scrollToConnect = () => {
