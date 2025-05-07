@@ -29,7 +29,7 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="contact-section py-5">
+    <section id="contact" className="about-section py-5 bg-light">
       <div className="container py-5">
         <div className="row text-center mb-5">
           <div className="col-lg-6 mx-auto">

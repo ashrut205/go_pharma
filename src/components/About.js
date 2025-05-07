@@ -37,42 +37,7 @@ function About() {
         </div>
       </section>
 
-      <HistorySection />
     </>
-  );
-}
-
-function HistorySection() {
-  return (
-    <section className="about-section py-5 bg-light">
-      <div className="container">
-        <div className="row mt-5">
-          <div className="col-lg-10 mx-auto text-center">
-            <span className="badge bg-primary-subtle text-primary mb-2">Our History</span>
-            <h2 className="section-title mb-4">Empowering Progress Through Innovation</h2>
-            <p className="mb-3">
-              Established with a vision to revolutionize the way businesses leverage technology,
-              Srigorack Technologies began as a software development firm focused on building
-              smart, scalable, and performance-driven solutions. From the very beginning,
-              our mission has been clear: to deliver innovative software that drives efficiency,
-              enhances user experiences, and delivers measurable value.
-            </p>
-            <p className="mb-3">
-              Our early milestones included delivering successful custom solutions for IT service
-              providers, finance companies, and SaaS firms—helping them streamline operations,
-              boost productivity, and accelerate growth through powerful, tailored applications.
-            </p>
-            <p>
-              As we continue to grow, we’re entering a transformative phase—expanding our technology
-              offerings to meet the critical needs of the pharmaceutical industry. With a deep
-              understanding of compliance-driven environments, we are now empowering pharmaceutical
-              companies with intelligent, reliable software solutions that support every stage
-              of their operations.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
   );
 }
 
